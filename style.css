@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    background: #e5e5e5;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.location-button {
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background-image: var(--gradient);
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.location-button:hover {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+:root {
+    --gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+}
+
+input[type="search" i] {
+    border: none;
+    border-radius: 3px;
+    width: 500px;
+    padding: 10px;
+}
+
+.location-serch {
+    margin: 20px 0;
+}
+
+.pInfoBlockCity p {
+    margin: 0;
+}
+
+.bannerCity {
+    width: 990px;
+    height: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.infoBlock {
+    display: flex;
+}
+
+.infoHoursCity {
+    width: 500px;
+}
+
+.infoBlockCity {
+    display: flex;
+    align-content: space-between;
+    width: 308px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 0;
+    background: white;
+}
+
+.humidityAll,
+.visibilityAll,
+.sunriseAll,
+.sunsetAll {
+    width: 45%;
+    padding: 20px 0;
+}
+
+.weatherContainer {
+    display: flex;
+}
+
+.leftCont {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 315px;
+    width: 31%;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.centerCont {
+    text-align: left;
+    width: 30%;
+}
+
+.rightCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 2.3;
+    width: 40%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.blockDay {
+    background: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+.characteristic img {
+    width: 30px;
+    padding: 0 5px;
+}
+
+.cityTemp {
+    font-size: 50px;
+    margin: 20px 0 0 0;
+    font-weight: 700;
+}
+
+.cityName {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.cityTime {
+    font-size: 30px;
+}
+
+.icons {
+    width: 10px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.weekdays {
+    margin: 0 auto;
+    /* width: 980px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.tab button {
+    width: 350px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-image: var(--gradient);
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabcontentdays {
+    display: flex;
+}
+
+.blockDay {
+    margin: 5px;
+}
+
+.date2,
+.date3,
+.date4,
+.date5,
+.date6 {
+    font-weight: 700;
+}
+
+.description2,
+.description3,
+.description4,
+.description5,
+.description6 {
+    font-style: italic;
+}
+
+.infoHoursCity {
+    display: flex;
+}
+
+#titleCityBlock {
+    margin: 30px;
+}
+
+.titleCity {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.characteristic .status {
+    font-size: 25px;
+}
+
+.humidityAll,
+.visibilityAll,
+.sunriseAll,
+.sunsetAll {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-around
+}
+
+.tabcontent {
+    margin-top: 30px;
+    background-size: cover;
+}
+
+.leftContBlock {
+    width: 80%;
+    height: 80%;
+    background: white;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+.leftCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title,
+.feelsLike {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.leftContBlock {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: var(--gradient);
+    opacity: 0.7;
+}
+
+.blockDay {
+    width: 45%;
+}
+
+.tempAllBlock {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 525px) {
+    .infoBlockCity {
+        width: 100%;
+    }
+    .infoHoursCity {
+        width: 100%;
+        flex-direction: column;
+    }
+    input[type="search" i] {
+        width: 60%;
+        margin: 10px 0;
+    }
+    .tab {
+        width: 80%;
+        margin: 5px;
+        text-align: center;
+    }
+    .infoBlock {
+        width: 100%;
+        flex-direction: column;
+    }
+    .bannerCity {
+        width: 100%;
+        height: 52%;
+        border: none;
+    }
+    .leftCont,
+    .centerCont,
+    .rightCont,
+    .weatherContainer,
+    .cityName,
+    .tab button,
+    .weekdays {
+        width: 100%;
+    }
+    .cityTemp {
+        font-size: 30px;
+    }
+    .cityName {
+        font-size: 25px;
+    }
+    .weatherContainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .humidityAll,
+    .visibilityAll,
+    .sunriseAll,
+    .sunsetAll {
+        width: 100%;
+    }
+    .blockDay {
+        width: 41%;
+        margin: 5px 0;
+    }
+    .location-button {
+        height: 20%;
+        font-size: 12px;
+        width: 30%;
+    }
+    .location-serch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoHoursCity {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tabcontentdays {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .humidityAll,
+    .visibilityAll,
+    .sunriseAll,
+    .sunsetAll {
+        width: 45%;
+        padding: 10px 0;
+    }
+    .centerCont {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightCont {
+        align-items: center;
+        line-height: 1.5;
+    }
+    .characteristic .status {
+        font-size: 17px;
+    }
+}

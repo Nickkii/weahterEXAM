@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Актуальный прогноз погоды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://yandex.ru/pogoda/static/favicon.ico?v=3">
+</head>
+
+<body>
+    <section id="serchBlock">
+        <form>
+            <div class="location-serch">
+                <input id="location" type="search" placeholder="Введите название города...">
+
+                <button type="submit" class="location-button">Узнать погоду</button>
+            </div>
+        </form>
+    </section>
+    <main>
+        <section class="today" id="today"> </section>
+    </main>
+
+    <script src="weather1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALz3lEiw4kIfsrhb4o2PdgeaL7Dk0WrMU&libraries=places"></script> -->
+
+
+</body>
+
+</html>
